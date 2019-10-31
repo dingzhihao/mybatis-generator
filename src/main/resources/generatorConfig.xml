@@ -14,9 +14,9 @@
 
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-            connectionURL="jdbc:mysql://192.168.8.101:3306?serverTimezone=Asia/Shanghai&amp;useSSL=false&amp;allowPublicKeyRetrieval=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"
-            userId="root"
-            password="123456">
+            connectionURL="jdbc:mysql://localhost:3306?serverTimezone=Asia/Shanghai&amp;useSSL=false&amp;allowPublicKeyRetrieval=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"
+            userId="userId"
+            password="password">
         </jdbcConnection>
 
         <!-- 默认false，把JDBC DECIMAL和NUMERIC类型解析为Integer，
@@ -46,7 +46,7 @@
         </javaClientGenerator>
 
         <!-- 指定数据库表 -->
-        <table tableName="xl_emb_order"></table>
+        <table tableName="tableName"></table>
 
         <!-- 有些表的字段需要指定java类型
             <table schema="" tableName="">
